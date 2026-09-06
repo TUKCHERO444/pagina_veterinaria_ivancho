@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0EA5E9;
+  --color-primary-dark: #0284C7;
+  --color-primary-deep: #0369A1;
+  --color-primary-night: #075985;
+  --color-primary-light: #7DD3FC;
+  --color-primary-soft: #BAE6FD;
+  --color-primary-pale: #E0F2FE;
+  --color-primary-paler: #F0F9FF;
+
+  --color-accent: #06B6D4;
+  --color-accent-dark: #0E7490;
+  --color-accent-night: #155E75;
+  --color-accent-soft: #A5F3FC;
+  --color-accent-pale: #CFFAFE;
+
+  --color-ink: #0F172A;
+  --color-ink-muted: #475569;
+  --color-mist: #94A3B8;
+  --color-line: #E2E8F0;
+  --color-line-soft: #EEF4F9;
+
+  --color-paper: #FFFFFF;
+  --color-surface: #F8FBFF;
+  --color-surface-soft: #F0F7FE;
+
+  --color-night: #082F49;
+  --color-night-card: #0C4A6E;
+  --color-night-ink: #E0F2FE;
+  --color-night-muted: #9FC6DA;
+
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  body {
+    font-family: var(--font-body);
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+  ::selection {
+    background: var(--color-primary-light);
+    color: var(--color-ink);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.gif-crossfade {
+  animation: gif-crossfade 21s infinite ease-in-out;
+  will-change: opacity;
+}
+
+.gif-crossfade:nth-of-type(1) {
+  animation-delay: -0s;
+}
+
+.gif-crossfade:nth-of-type(2) {
+  animation-delay: -7s;
+}
+
+.gif-crossfade:nth-of-type(3) {
+  animation-delay: -14s;
+}
+
+@keyframes gif-crossfade {
+  0% {
+    opacity: 0;
+  }
+  4.8% {
+    opacity: 1;
+  }
+  28.6% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .gif-crossfade {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+
+  .gif-crossfade:nth-of-type(1) {
+    opacity: 1 !important;
+  }
+}
