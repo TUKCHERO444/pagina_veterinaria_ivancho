@@ -17,9 +17,9 @@ const textSlides = [
     sub: "Clínica veterinaria integral con atención experta y un trato cercano, en un ambiente limpio y luminoso.",
   },
   {
-    title: "Hospedaje fresco y sereno",
-    highlight: "se queda a gusto, tú sales tranquilo",
-    sub: "Estadías cómodas, seguras y con cuidados diarios para que tu mascota descanse.",
+    title: "Cuidado y amor para él,",
+    highlight: "cuando tú no estás",
+    sub: "Hospedaje amigable con tus engreídos de 4 patas: estadías cómodas, seguras y con atención diaria.",
   },
 ];
 
@@ -117,8 +117,8 @@ export default function Hero() {
           <Reveal delay={400}>
             <div className="mt-10 flex flex-wrap gap-6">
               {[
-                { icon: Stethoscope, label: "+10 años de experiencia" },
-                { icon: Bed, label: "Hospedaje seguro" },
+                { icon: Stethoscope, label: "Desde el 2005" },
+                { icon: Bed, label: "18 años de hospedaje activo" },
               ].map(({ icon: Icon, label }) => (
                 <div
                   key={label}
@@ -131,6 +131,20 @@ export default function Hero() {
             </div>
           </Reveal>
         </div>
+
+        <Reveal delay={250} className="relative flex items-center justify-center">
+          <div
+            className="pointer-events-none absolute inset-0 m-auto aspect-square max-w-[20rem] rounded-full bg-primary-pale/60 blur-3xl sm:max-w-[26rem] lg:max-w-[30rem]"
+            aria-hidden="true"
+          />
+          <img
+            src="/imgs/logo.png"
+            alt="Logo Veterinaria Ivancho"
+            width={1427}
+            height={1427}
+            className="relative h-auto w-full max-w-[10rem] object-contain drop-shadow-2xl sm:max-w-[14rem] lg:max-w-[30rem]"
+          />
+        </Reveal>
       </div>
 
       <div

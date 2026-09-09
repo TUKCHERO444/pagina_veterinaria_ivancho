@@ -1,8 +1,12 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Veterinaria Iváncho | Tu Mascota, Tu Familia",
+  title: "Veterinaria Ivancho | Tu Mascota, Tu Familia",
   description: "Atención veterinaria integral para tus mascotas.",
+  icons: {
+    icon: "/imgs/logo.png",
+    apple: "/imgs/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {

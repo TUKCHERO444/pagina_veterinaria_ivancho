@@ -64,7 +64,7 @@ export default function Servicios() {
           <p className="mt-4 text-lg leading-relaxed text-ink-muted">
             Todo lo que tu mascota necesita, en un solo lugar y con el cariño
             que merece. Nuestro equipo combina experiencia y vocación para
-            cuidarla en cada etapa.
+            cuidarla en cada etapa, desde el 2005.
           </p>
         </Reveal>
 

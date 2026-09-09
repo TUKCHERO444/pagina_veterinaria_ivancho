@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-const position = [-12.0464, -77.0428];
+const position = [-6.778268, -79.856339];
 
 const customIcon = L.divIcon({
   className: "",
@@ -32,7 +32,7 @@ export default function MapaLugar() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={position} icon={customIcon}>
-        <Popup>Veterinaria Iváncho</Popup>
+        <Popup>Veterinaria Ivancho · Av. Arequipa cuadra 13 Mz B Lote 2</Popup>
       </Marker>
     </MapContainer>
   );

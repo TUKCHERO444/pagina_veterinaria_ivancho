@@ -80,21 +80,27 @@ export default function Hospedaje() {
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-accent-soft bg-white/80 px-4 py-1.5 text-sm font-semibold text-accent-dark backdrop-blur-sm">
               <Bed size={16} aria-hidden="true" />
-              Servicio de hospedaje
+              Hospedaje amigable · 18 años de activo
             </span>
             <h2 className="mt-5 font-heading text-3xl font-bold uppercase tracking-wide text-ink sm:text-4xl lg:text-5xl">
-              Se queda a gusto,{" "}
+              Cuidado y amor para él,{" "}
               <span className="bg-gradient-to-r from-accent-dark to-accent bg-clip-text text-transparent">
-                tú sales tranquilo
+                cuando tú no estás
               </span>
             </h2>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-muted">
-              Si tienes que viajar o estar fuera por unos días, deja a tu mascota
-              en un hospedaje pensado para su comodidad y tu tranquilidad.
-              Estadías flexibles para días, fines de semana o vacaciones.
+            <p className="mt-5 max-w-xl font-heading text-xl font-semibold text-accent-dark sm:text-2xl">
+              Se queda a gusto, tú sales tranquilo.
+            </p>
+            <p className="mt-3 max-w-xl text-lg leading-relaxed text-ink-muted">
+              Con más de 18 años de hospedaje activo, recibimos a tus engreídos
+              de 4 patas con cuidado y cariño. Si tienes que viajar o estar
+              fuera por unos días, deja a tu mascota en un hospedaje pensado
+              para su comodidad y tu tranquilidad. Estadías flexibles para
+              días, fines de semana o vacaciones.
             </p>
             <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {[
+                "18 años de hospedaje activo",
                 "Estadía diaria, fin de semana o larga",
                 "Supervisión veterinaria incluida",
                 "Reserva por WhatsApp o teléfono",

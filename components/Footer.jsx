@@ -1,8 +1,5 @@
 import {
-  PawPrint,
-  Phone,
   WhatsappLogo,
-  Envelope,
   MapPin,
   InstagramLogo,
   FacebookLogo,
@@ -34,18 +31,26 @@ export default function Footer() {
             href="#inicio"
             className="flex items-center gap-2 font-heading text-2xl font-bold uppercase tracking-wide text-white"
           >
-            <PawPrint weight="fill" className="text-primary-light" size={28} aria-hidden="true" />
-            Iváncho
+            <img
+              src="/imgs/logo.png"
+              alt="Logo Veterinaria Ivancho"
+              width={28}
+              height={28}
+              className="h-8 w-8"
+            />
+            Ivancho
           </a>
           <p className="mt-4 max-w-md leading-relaxed text-night-muted">
-            Clínica veterinaria, hospedaje y tienda para el bienestar de tu
-            mascota. Un cuidado claro y cristalino.
+            Somos una clínica veterinaria con consultas, tratamientos,
+            cirugías, petshop, baños y cortes, análisis de laboratorio e
+            internamiento, con un hospedaje amigable con tus engreídos de 4
+            patas desde el 2005.
           </p>
           <div className="mt-6 flex gap-3">
             {[
-              { icon: InstagramLogo, label: "Instagram", href: "#" },
-              { icon: FacebookLogo, label: "Facebook", href: "#" },
-              { icon: WhatsappLogo, label: "WhatsApp", href: "https://wa.me/51999888777" },
+              { icon: InstagramLogo, label: "Instagram", href: "https://www.instagram.com/ivancho._vet/" },
+              { icon: FacebookLogo, label: "Facebook", href: "https://www.facebook.com/p/Ivancho-Clinica-Veterinaria-Hospedaje-100070191636668/" },
+              { icon: WhatsappLogo, label: "WhatsApp", href: "https://wa.me/51939229449" },
             ].map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
@@ -83,9 +88,8 @@ export default function Footer() {
           </h3>
           <ul className="mt-4 space-y-3">
             {[
-              { icon: MapPin, text: "Av. Ejemplo 123, San Miguel, Lima" },
-              { icon: Phone, text: "(01) 555-1234" },
-              { icon: Envelope, text: "hola@veterinariaivancho.com" },
+              { icon: MapPin, text: "Av. Arequipa cuadra 13 Mz B Lote 2" },
+              { icon: WhatsappLogo, text: "+51 939 229 449" },
             ].map(({ icon: Icon, text }) => (
               <li key={text} className="flex items-start gap-2 text-sm text-night-muted">
                 <Icon size={18} className="mt-0.5 shrink-0 text-primary-light" aria-hidden="true" />
@@ -110,7 +114,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 sm:flex-row sm:px-6 lg:px-8">
           <p className="text-sm text-night-muted">
-            © {new Date().getFullYear()} Veterinaria Iváncho. Todos los derechos reservados.
+            © {new Date().getFullYear()} Veterinaria Ivancho. Todos los derechos reservados.
           </p>
           <p className="text-sm text-night-muted">
             Hecho con cariño para las mascotas.

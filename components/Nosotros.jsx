@@ -1,9 +1,9 @@
-import { Heart, Users, HandHeart, PawPrint } from "@phosphor-icons/react/ssr";
+import { Heart, Users, HandHeart } from "@phosphor-icons/react/ssr";
 import Reveal from "@/components/Reveal";
 import WaveDivider from "@/components/WaveDivider";
 
 const stats = [
-  { value: "+10", label: "años cuidando mascotas" },
+  { value: "+18", label: "años de hospedaje activo" },
   { value: "+5.000", label: "pacientes atendidos" },
   { value: "24/7", label: "cuidado en hospedaje" },
   { value: "100%", label: "trato con cariño" },
@@ -22,24 +22,28 @@ export default function Nosotros() {
                 aria-hidden="true"
               />
               <div className="relative flex items-center gap-4">
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary-deep text-white shadow-md shadow-primary/20">
-                  <PawPrint size={32} weight="fill" aria-hidden="true" />
-                </div>
+                <img
+                  src="/imgs/logo.png"
+                  alt="Logo Veterinaria Ivancho"
+                  width={64}
+                  height={64}
+                  className="h-16 w-16 rounded-2xl object-cover shadow-md shadow-primary/20"
+                />
                 <div>
                   <p className="font-heading text-2xl font-bold uppercase text-ink">
-                    Veterinaria Iváncho
+                    Veterinaria Ivancho
                   </p>
                   <p className="text-sm text-ink-muted">
-                    Un cuidado claro y cristalino
+                    Dedicados a tu mascota desde el 2005
                   </p>
                 </div>
               </div>
               <p className="relative mt-6 leading-relaxed text-ink-muted">
-                Somos un equipo de veterinarios y cuidadores que ve a cada
-                mascota como parte de la familia. Combinamos tecnología,
-                experiencia y mucha vocación para brindar atención de salud,
-                hospedaje y bienestar en un ambiente limpio, luminoso y
-                confiable.
+                Somos una clínica veterinaria con servicios de consultas,
+                tratamientos, cirugías, petshop, baños y cortes, ecografías,
+                análisis de laboratorio, servicio de internamiento y hospedaje
+                amigable con tus engreídos de 4 patas, dedicados al cuidado de
+                tu mascota desde el 2005.
               </p>
               <div className="relative mt-6 flex flex-wrap gap-4">
                 {[

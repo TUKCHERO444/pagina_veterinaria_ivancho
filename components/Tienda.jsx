@@ -45,14 +45,14 @@ export default function Tienda() {
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-primary-deep">
               <ShoppingBag size={16} aria-hidden="true" />
-              Nuestra tienda
+              Petshop
             </span>
             <h2 className="mt-3 font-heading text-3xl font-bold uppercase tracking-wide text-ink sm:text-4xl lg:text-5xl">
               Productos para su bienestar
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-ink-muted">
               Un catálogo cuidado de alimentos, higiene y accesorios para que tu
-              mascota tenga lo mejor, con asesoría de nuestro equipo.
+              mascota tenga lo mejor, con asesoría de nuestro equipo desde el 2005.
             </p>
           </div>
         </Reveal>

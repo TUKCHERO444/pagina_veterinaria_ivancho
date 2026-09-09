@@ -1,4 +1,4 @@
-# Design — Identity Visual · Veterinaria Iváncho
+# Design — Identity Visual · Veterinaria Ivancho
 
 > Fuente de verdad de la identidad visual. Reflejada en los tokens de `app/globals.css` (`@theme`). Cualquier cambio de identidad debe actualizar este documento Y los tokens.
 
@@ -6,7 +6,7 @@
 
 **"Un cuidado claro y cristalino."**
 
-Veterinaria Iváncho fusiona las dos caras del negocio en una sola imagen de **clínica moderna**: luz, aire, pulcritud y calma. No es oscura ni pesada — es un entorno *celeste pastel predominantemente blanco*, con degradados cristalinos que evocan vidrio limpio, agua fresca y esa sensación de recién desinfectado que da confianza.
+Veterinaria Ivancho fusiona las dos caras del negocio en una sola imagen de **clínica moderna**: luz, aire, pulcritud y calma. No es oscura ni pesada — es un entorno *celeste pastel predominantemente blanco*, con degradados cristalinos que evocan vidrio limpio, agua fresca y esa sensación de recién desinfectado que da confianza.
 
 1. **Clínica** → transparencia, higiene, profesionalismo, calma.
 2. **Hospedaje** → confort sereno, frescura, cuidado.

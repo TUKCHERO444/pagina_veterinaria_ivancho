@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone, WhatsappLogo, Envelope } from "@phosphor-icons/react/ssr";
+import { MapPin, Clock, Phone, WhatsappLogo } from "@phosphor-icons/react/ssr";
 import Mapa from "@/components/Mapa";
 import Reveal from "@/components/Reveal";
 import WaveDivider from "@/components/WaveDivider";
@@ -7,33 +7,27 @@ const contact = [
   {
     icon: MapPin,
     label: "Dirección",
-    value: "Av. Ejemplo 123, San Miguel, Lima",
+    value: "Av. Arequipa cuadra 13 Mz B Lote 2",
     href: "#",
   },
   {
     icon: Phone,
-    label: "Teléfono",
-    value: "(01) 555-1234",
-    href: "tel:+5115551234",
+    label: "Celular",
+    value: "+51 939 229 449",
+    href: "tel:+51939229449",
   },
   {
     icon: WhatsappLogo,
     label: "WhatsApp",
-    value: "+51 999 888 777",
-    href: "https://wa.me/51999888777",
-  },
-  {
-    icon: Envelope,
-    label: "Email",
-    value: "hola@veterinariaivancho.com",
-    href: "mailto:hola@veterinariaivancho.com",
+    value: "+51 939 229 449",
+    href: "https://wa.me/51939229449",
   },
 ];
 
 const horarios = [
-  { day: "Lunes a Viernes", hours: "8:00 – 19:00" },
-  { day: "Sábados", hours: "9:00 – 17:00" },
-  { day: "Hospedaje", hours: "24/7" },
+  { day: "Lunes a Sábado", hours: ["9:00 a.m. – 1:00 p.m.", "3:00 – 7:00 p.m."] },
+  { day: "Domingo", hours: ["9:00 a.m. – 1:00 p.m."] },
+  { day: "Hospedaje", hours: ["24/7"] },
 ];
 
 export default function Ubicacion() {
@@ -110,7 +104,11 @@ export default function Ubicacion() {
                       className="flex items-center justify-between py-3 text-sm"
                     >
                       <span className="text-ink-muted">{h.day}</span>
-                      <span className="font-medium text-ink">{h.hours}</span>
+                      <span className="text-right font-medium text-ink">
+                        {h.hours.map((t) => (
+                          <span key={t} className="block">{t}</span>
+                        ))}
+                      </span>
                     </li>
                   ))}
                 </ul>

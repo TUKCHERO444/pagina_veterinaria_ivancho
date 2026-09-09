@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { List, X, PawPrint } from "@phosphor-icons/react";
+import { List, X } from "@phosphor-icons/react";
 
 const links = [
   { href: "#servicios", label: "Servicios" },
@@ -39,8 +39,14 @@ export default function Header() {
           href="#inicio"
           className="flex items-center gap-2 font-heading text-2xl font-bold uppercase tracking-wide text-ink"
         >
-          <PawPrint weight="fill" className="text-primary" size={28} aria-hidden="true" />
-          Iváncho
+          <img
+            src="/imgs/logo.png"
+            alt="Logo Veterinaria Ivancho"
+            width={28}
+            height={28}
+            className="h-8 w-8"
+          />
+          Ivancho
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
