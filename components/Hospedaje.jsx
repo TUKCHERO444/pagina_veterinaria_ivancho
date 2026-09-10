@@ -80,7 +80,7 @@ export default function Hospedaje() {
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-accent-soft bg-white/80 px-4 py-1.5 text-sm font-semibold text-accent-dark backdrop-blur-sm">
               <Bed size={16} aria-hidden="true" />
-              Hospedaje amigable · 18 años de activo
+              Hospedaje amigable · 18 años de hospedaje · Desde 2008
             </span>
             <h2 className="mt-5 font-heading text-3xl font-bold uppercase tracking-wide text-ink sm:text-4xl lg:text-5xl">
               Cuidado y amor para él,{" "}
@@ -92,15 +92,17 @@ export default function Hospedaje() {
               Se queda a gusto, tú sales tranquilo.
             </p>
             <p className="mt-3 max-w-xl text-lg leading-relaxed text-ink-muted">
-              Con más de 18 años de hospedaje activo, recibimos a tus engreídos
-              de 4 patas con cuidado y cariño. Si tienes que viajar o estar
-              fuera por unos días, deja a tu mascota en un hospedaje pensado
-              para su comodidad y tu tranquilidad. Estadías flexibles para
-              días, fines de semana o vacaciones.
+              Con más de 18 años de hospedaje, somos el primer hospedaje de
+              Chiclayo desde 2008. Recibimos a tus engreídos de 4 patas con
+              cuidado y cariño. Si tienes que viajar o estar fuera por unos
+              días, deja a tu mascota en un hospedaje pensado para su comodidad
+              y tu tranquilidad. Estadías flexibles para días, fines de semana
+              o vacaciones.
             </p>
             <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {[
-                "18 años de hospedaje activo",
+                "18 años de hospedaje",
+                "Primer hospedaje de Chiclayo desde 2008",
                 "Estadía diaria, fin de semana o larga",
                 "Supervisión veterinaria incluida",
                 "Reserva por WhatsApp o teléfono",

@@ -46,7 +46,7 @@ export default function Header() {
             height={28}
             className="h-8 w-8"
           />
-          Ivancho
+          IVANCHO CLINICA VETERINARIA
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">

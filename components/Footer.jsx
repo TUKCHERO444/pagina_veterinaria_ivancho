@@ -38,7 +38,7 @@ export default function Footer() {
               height={28}
               className="h-8 w-8"
             />
-            Ivancho
+            IVANCHO CLINICA VETERINARIA
           </a>
           <p className="mt-4 max-w-md leading-relaxed text-night-muted">
             Somos una clínica veterinaria con consultas, tratamientos,

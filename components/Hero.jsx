@@ -21,6 +21,11 @@ const textSlides = [
     highlight: "cuando tú no estás",
     sub: "Hospedaje amigable con tus engreídos de 4 patas: estadías cómodas, seguras y con atención diaria.",
   },
+  {
+    title: "Todo para tus engreídos,",
+    highlight: "en nuestra tienda",
+    sub: "Alimentos, juguetes, accesorios y productos de higiene para consentir a tu mascota todos los días.",
+  },
 ];
 
 export default function Hero() {
@@ -36,7 +41,7 @@ export default function Hero() {
     if (reduceMotion) return;
     timer.current = setInterval(
       () => setIndex((i) => (i + 1) % textSlides.length),
-      5000
+      6000
     );
     return () => clearInterval(timer.current);
   }, [paused]);
@@ -50,7 +55,7 @@ export default function Hero() {
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
     >
-      <HeroBackground />
+      <HeroBackground index={index} />
 
       <div
         className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-transparent lg:from-white/95 lg:via-white/65 lg:to-transparent"
@@ -118,14 +123,22 @@ export default function Hero() {
             <div className="mt-10 flex flex-wrap gap-6">
               {[
                 { icon: Stethoscope, label: "Desde el 2005" },
-                { icon: Bed, label: "18 años de hospedaje activo" },
-              ].map(({ icon: Icon, label }) => (
-                <div
-                  key={label}
-                  className="flex items-center gap-2 text-sm text-ink-muted"
-                >
-                  <Icon size={20} className="text-primary-dark" aria-hidden="true" />
-                  {label}
+                {
+                  icon: Bed,
+                  label: "18 años de hospedaje",
+                  detail: "Primer hospedaje de Chiclayo desde 2008",
+                },
+              ].map(({ icon: Icon, label, detail }) => (
+                <div key={label} className="text-sm text-ink-muted">
+                  <span className="flex items-center gap-2">
+                    <Icon size={20} className="text-primary-dark" aria-hidden="true" />
+                    {label}
+                  </span>
+                  {detail && (
+                    <span className="mt-1 block pl-7 text-xs text-ink-muted/80">
+                      {detail}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
@@ -148,25 +161,25 @@ export default function Hero() {
       </div>
 
       <div
-        className="pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
         role="tablist"
         aria-label="Seleccionar slide"
       >
-        <div className="flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 backdrop-blur-sm">
+        <div className="flex items-center gap-2.5 rounded-full bg-white/70 px-4 py-2 backdrop-blur-sm">
           {textSlides.map((_, i) => (
             <button
               key={i}
               type="button"
               role="tab"
               aria-selected={i === index}
-              aria-label={`Slide ${i + 1}`}
+              aria-label={`Diapositiva ${i + 1} de ${textSlides.length}`}
               onClick={() => setIndex(i)}
               onFocus={() => setPaused(true)}
               onBlur={() => setPaused(false)}
-              className={`h-2.5 rounded-full transition-all duration-300 ${
+              className={`h-3 w-3 cursor-pointer rounded-full transition-all duration-300 ${
                 i === index
-                  ? "w-8 bg-primary-dark"
-                  : "w-2.5 bg-line hover:bg-mist"
+                  ? "scale-125 bg-accent shadow-sm shadow-accent/50"
+                  : "bg-line hover:scale-110 hover:bg-primary/60"
               }`}
             />
           ))}

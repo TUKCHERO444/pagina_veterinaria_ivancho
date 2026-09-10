@@ -31,7 +31,7 @@ export default function Nosotros() {
                 />
                 <div>
                   <p className="font-heading text-2xl font-bold uppercase text-ink">
-                    Veterinaria Ivancho
+                    IVANCHO CLINICA VETERINARIA
                   </p>
                   <p className="text-sm text-ink-muted">
                     Dedicados a tu mascota desde el 2005
