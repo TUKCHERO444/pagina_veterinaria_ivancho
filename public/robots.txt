@@ -1,0 +1,8 @@
+# robots.txt - Veterinaria Ivancho
+# Veterinary clinic in Chiclayo, Lambayeque, Peru
+
+User-agent: *
+Allow: /
+Disallow: /*?*
+
+Sitemap: https://veterinariaivancho.netlify.app/sitemap.xml

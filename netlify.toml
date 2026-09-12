@@ -1,0 +1,35 @@
+# Netlify configuration — Veterinaria Ivancho
+# Next.js es detectado automáticamente por Netlify (no sobreescribir build/publish).
+
+# Headers de seguridad globales
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# Caché de archivos estáticos de Next.js (build hash → inmutables)
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Caché de imágenes del sitio
+[[headers]]
+  for = "/imgs/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Sitemap y robots siempre frescos
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
