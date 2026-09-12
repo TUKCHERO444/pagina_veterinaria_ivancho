@@ -87,6 +87,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
+        <meta
+          name="google-site-verification"
+          content="bGy-kE67qJB9sp7agzhr00TOnGbUOb_AEFOu0IIzqzw"
+        />
         <meta name="geo.region" content="PE-LAM" />
         <meta name="geo.placename" content="Chiclayo" />
         <meta name="geo.position" content="-6.778268;-79.856339" />
